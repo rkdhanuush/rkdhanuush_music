@@ -1,0 +1,964 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #000;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: gold;
+}
+
+.tagline {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* Sections */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.profile-image {
+   width: 320px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px cyan;
+    .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centers everything horizontally */
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.section-title {
+    font-size: 50px;
+    color: cyan;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Decorative line beside heading */
+.section-title::before {
+    .section-title {
+    font-size: 50px;
+    color: cyan;
+    margin-bottom: 35px;
+    border-left: none;
+}
+
+.section-title::before {
+    display: none;
+}
+}
+
+.profile-img {
+    width: 650px;
+    max-width: 100%;
+    border-radius: 30px;
+    transition: 0.4s ease;
+    box-shadow: 0 0 25px rgba(0,255,255,.5);
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 45px cyan;
+}
+
+}
+
+#about p {
+    margin-bottom: 15px;
+}
+
+/* Projects */
+.project {
+    background: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-left: 5px solid gold;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffd700;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #000;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cover-photo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* =========================
+   Gradient Background
+========================= */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #0f0f0f,
+        #1a1a1a,
+        #121212
+    );
+    color:white;
+    line-height:1.6;
+}
+
+/* =========================
+   Glassmorphism Cards
+========================= */
+article{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+
+    transition:0.4s ease;
+}
+
+/* =========================
+   Hover Glow Effect
+========================= */
+article:hover{
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 0 15px gold,
+    0 0 30px rgba(255,215,0,0.5);
+}
+
+/* =========================
+   Projects Grid Layout
+========================= */
+#projects{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+}
+
+/* =========================
+   Skill Progress Bars
+========================= */
+
+.skill{
+    margin-bottom:20px;
+}
+
+.skill p{
+    margin-bottom:8px;
+}
+
+.progress{
+    width:100%;
+    height:15px;
+    background:#333;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    background:gold;
+    border-radius:20px;
+
+    animation:fillBar 2s ease;
+}
+
+.music{
+    width:95%;
+}
+
+.mixing{
+    width:90%;
+}
+
+.mastering{
+    width:88%;
+}
+
+.sound{
+    width:85%;
+}
+
+@keyframes fillBar{
+    from{
+        width:0;
+    }
+}
+
+/* =========================
+   Social Media Icons
+========================= */
+
+.social-icons{
+    text-align:center;
+    margin-top:30px;
+}
+
+.social-icons a{
+    display:inline-block;
+    margin:10px;
+    font-size:30px;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:gold;
+    transform:scale(1.2);
+}
+
+/* =========================
+   Animated Button
+========================= */
+
+button{
+    background:gold;
+    color:black;
+    border:none;
+
+    padding:12px 30px;
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 0 15px gold,
+    0 0 30px rgba(255,215,0,0.8);
+}
+
+/* =========================
+   Section Animation
+========================= */
+
+section{
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+
+    color:white;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+HEADER
+========================== */
+
+header{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+header h1{
+
+    font-size:50px;
+
+    letter-spacing:3px;
+
+    color:#00ffd5;
+
+}
+
+header p{
+
+    margin-top:10px;
+
+    font-size:20px;
+
+}
+
+/* ==========================
+NAVIGATION
+========================== */
+
+nav{
+
+    margin-top:30px;
+
+    position:sticky;
+
+    top:0;
+
+    padding:20px;
+
+    backdrop-filter:blur(12px);
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:15px;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+nav a:hover{
+
+    color:#00ffd5;
+
+    text-shadow:0 0 12px cyan;
+
+}
+
+/* ==========================
+SECTION
+========================== */
+
+section{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.4);
+
+    transition:.5s;
+
+}
+
+section:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ==========================
+HEADINGS
+========================== */
+
+h2{
+
+    color:#00ffd5;
+
+    margin-bottom:20px;
+
+    border-left:6px solid cyan;
+
+    padding-left:15px;
+
+}
+
+/* ==========================
+PROFILE IMAGE
+========================== */
+
+.cover-photo{
+
+    width:100%;
+
+    max-width:700px;
+
+    display:block;
+
+    margin:30px auto;
+
+    border-radius:20px;
+
+    box-shadow:0 0 30px cyan;
+
+}
+
+/* ==========================
+LISTS
+========================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+ul li{
+
+    padding:12px;
+
+    margin:10px 0;
+
+    background:rgba(255,255,255,.08);
+
+    border-left:5px solid cyan;
+
+    border-radius:8px;
+
+    transition:.4s;
+
+}
+
+ul li:hover{
+
+    background:#00ffd520;
+
+    transform:translateX(10px);
+
+}
+
+/* ==========================
+PROJECT CARDS
+========================== */
+
+#projects{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+#projects h2{
+
+    grid-column:1/-1;
+
+}
+
+article{
+
+    background:rgba(255,255,255,.08);
+
+    padding:25px;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+}
+
+article:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px cyan;
+
+}
+
+article h3{
+
+    margin-bottom:15px;
+
+    color:#00ffd5;
+
+}
+
+/* ==========================
+SKILL PROGRESS BARS
+========================== */
+
+#skills ul li{
+
+    position:relative;
+
+    overflow:hidden;
+
+    color:white;
+
+}
+
+#skills ul li::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    height:5px;
+
+    width:90%;
+
+    background:#00ffd5;
+
+    animation:grow 2s ease;
+
+}
+
+@keyframes grow{
+
+from{
+
+width:0;
+
+}
+
+to{
+
+width:90%;
+
+}
+
+}
+
+/* ==========================
+FORM
+========================== */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+label{
+
+    margin-top:20px;
+
+}
+
+input,
+
+textarea{
+
+    padding:15px;
+
+    margin-top:8px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+input:focus,
+
+textarea:focus{
+
+    outline:none;
+
+    box-shadow:0 0 12px cyan;
+
+}
+
+/* ==========================
+BUTTON
+========================== */
+
+button{
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#00ffd5;
+
+    color:black;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px cyan;
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:40px;
+
+    background:black;
+
+}
+
+/* ==========================
+ANIMATION
+========================== */
+
+section{
+
+    animation:fade 1.2s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:35px;
+
+}
+
+nav{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+nav a{
+
+margin:10px;
+
+}
+
+section{
+
+padding:25px;
+
+}
+
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.profile-img {
+    width: 250px;
+    height: auto;
+}
+/* Center the image */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+/* Image styling */
+.profile-img {
+    width: 320px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+/* Hover effect */
+.profile-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px cyan;
+}
+/* Center the image */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* Image styling */
+.profile-img {
+    width: 320px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.profile-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px cyan;
+}
+.section-title {
+    font-size: 50px;
+    color: cyan;
+    margin-bottom: 35px;
+    border-left: none;
+}
+
+.section-title::before {
+    display: none;
+}
+/* ==========================
+PROFILE SECTION
+========================== */
+
+#about{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* Heading */
+
+#about h2{
+    border:none;
+    padding:0;
+    margin-bottom:35px;
+    font-size:50px;
+    color:#00ffd5;
+}
+
+/* remove cyan line */
+
+#about h2::before{
+    display:none;
+}
+
+/* Image */
+
+.profile-img{
+
+    display:block;
+
+    width:350px;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:0 auto;
+
+    border-radius:25px;
+
+    box-shadow:0 0 25px cyan;
+
+    transition:.4s;
+}
+
+.profile-img:hover{
+
+    transform:scale(1.06);
+
+    box-shadow:
+    0 0 25px cyan,
+    0 0 45px cyan;
+
+}
+/* Services Section */
+#services {
+    text-align: left;
+}
+
+/* Services Heading */
+#services h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    border-left: 6px solid cyan;
+    padding-left: 15px;
+}
+
+/* Service List */
+#services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Service Cards */
+#services ul li {
+    width: 250px;
+    padding: 18px 25px;
+    margin: 18px 0;
+    text-align: left;          /* <-- Left align text */
+    background: rgba(255,255,255,0.08);
+    border-left: 8px solid cyan;
+    border-radius: 15px;
+    transition: 0.4s;
+    font-size: 15px;
+}
+
+/* Hover Effect */
+#services ul li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 20px cyan;
+}
